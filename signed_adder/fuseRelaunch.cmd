@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "G:/VHDL_CODE/example_session_1/signed_adder/sigend_adder_TestBench_isim_beh.exe" -prj "G:/VHDL_CODE/example_session_1/signed_adder/sigend_adder_TestBench_beh.prj" "work.sigend_adder_TestBench" 

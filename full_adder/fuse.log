@@ -1,0 +1,20 @@
+Running: E:\ISE\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib secureip -o G:/VHDL_CODE/example_session_1/full_adder/Full_Adder_TestBench_isim_beh.exe -prj G:/VHDL_CODE/example_session_1/full_adder/Full_Adder_TestBench_beh.prj work.Full_Adder_TestBench 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 8
+Turning on mult-threading, number of parallel sub-compilation jobs: 16 
+Determining compilation order of HDL files
+Parsing VHDL file "G:/VHDL_CODE/example_session_1/full_adder/Full_Adder.vhd" into library work
+Parsing VHDL file "G:/VHDL_CODE/example_session_1/full_adder/Full_Adder_4bit.vhd" into library work
+Parsing VHDL file "G:/VHDL_CODE/example_session_1/full_adder/Full_Adder_TestBench.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling package standard
+Compiling package std_logic_1164
+Compiling architecture behavioral of entity Full_Adder [full_adder_default]
+Compiling architecture behavioral of entity Full_Adder_4bit [full_adder_4bit_default]
+Compiling architecture behavior of entity full_adder_testbench
+Time Resolution for simulation is 1ps.
+Compiled 7 VHDL Units
+Built simulation executable G:/VHDL_CODE/example_session_1/full_adder/Full_Adder_TestBench_isim_beh.exe
+Fuse Memory Usage: 29456 KB
+Fuse CPU Usage: 452 ms

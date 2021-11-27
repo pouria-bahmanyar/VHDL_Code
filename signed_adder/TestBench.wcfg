@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="G:/VHDL_CODE/example_session_1/signed_adder/sigend_adder_TestBench_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="numeric_std" />
+            <top_module name="sigend_adder_testbench" />
+            <top_module name="std_logic_1164" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="5" />
+   <wvobject fp_name="/sigend_adder_testbench/a" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">a[15:0]</obj_property>
+      <obj_property name="ObjectShortName">a[15:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sigend_adder_testbench/b" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">b[15:0]</obj_property>
+      <obj_property name="ObjectShortName">b[15:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sigend_adder_testbench/cin" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">cin[0:0]</obj_property>
+      <obj_property name="ObjectShortName">cin[0:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sigend_adder_testbench/cout" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">cout</obj_property>
+      <obj_property name="ObjectShortName">cout</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sigend_adder_testbench/sum" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">sum[15:0]</obj_property>
+      <obj_property name="ObjectShortName">sum[15:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+</wave_config>

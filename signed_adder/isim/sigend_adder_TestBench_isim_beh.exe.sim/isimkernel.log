@@ -1,0 +1,28 @@
+Command line:
+   sigend_adder_TestBench_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  2820
+
+Sat Nov 27 18:52:45 2021
+
+
+ Elaboration Time: 0.15625 sec
+
+ Current Memory Usage: 4714.62 Meg
+
+ Total Signals          : 11
+ Total Nets             : 67
+ Total Signal Drivers   : 6
+ Total Blocks           : 4
+ Total Primitive Blocks : 3
+ Total Processes        : 4
+ Total Traceable Variables  : 13
+ Total Scalar Nets and Variables : 550
+
+ Total Simulation Time: 0.15625 sec
+
+ Current Memory Usage: 4714.62 Meg
+
+Sat Nov 27 18:52:51 2021
+

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="G:/VHDL_CODE/example_session_1/Full_Adder/Full_Adder_TestBench_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="full_adder_testbench" />
+            <top_module name="std_logic_1164" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="6" />
+   <wvobject fp_name="/full_adder_testbench/a" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">a[3:0]</obj_property>
+      <obj_property name="ObjectShortName">a[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/full_adder_testbench/b" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">b[3:0]</obj_property>
+      <obj_property name="ObjectShortName">b[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/full_adder_testbench/cin" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">cin</obj_property>
+      <obj_property name="ObjectShortName">cin</obj_property>
+   </wvobject>
+   <wvobject fp_name="/full_adder_testbench/sum" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">sum[3:0]</obj_property>
+      <obj_property name="ObjectShortName">sum[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/full_adder_testbench/cou" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">cou</obj_property>
+      <obj_property name="ObjectShortName">cou</obj_property>
+   </wvobject>
+   <wvobject fp_name="/full_adder_testbench/uut/c_int" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">c_int[2:0]</obj_property>
+      <obj_property name="ObjectShortName">c_int[2:0]</obj_property>
+   </wvobject>
+</wave_config>

@@ -1,0 +1,3 @@
+vhdl work "Full_Adder.vhd"
+vhdl work "Full_Adder_4bit.vhd"
+vhdl work "Full_Adder_TestBench.vhd"
