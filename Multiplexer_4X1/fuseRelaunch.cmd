@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "G:/VHDL_CODE/example_session_1/Multiplexer_4X1/Multiiplexer_4X1_Testbench_isim_beh.exe" -prj "G:/VHDL_CODE/example_session_1/Multiplexer_4X1/Multiiplexer_4X1_Testbench_beh.prj" "work.Multiiplexer_4X1_Testbench" 
