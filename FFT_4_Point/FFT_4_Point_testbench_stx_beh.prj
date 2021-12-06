@@ -1,3 +1,0 @@
-vhdl isim_temp "Butterfly_Block.vhd"
-vhdl isim_temp "FFT_4_Point.vhd"
-vhdl isim_temp "FFT_4_Point_testbench.vhd"

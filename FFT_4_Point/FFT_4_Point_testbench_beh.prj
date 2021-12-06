@@ -1,3 +1,0 @@
-vhdl work "Butterfly_Block.vhd"
-vhdl work "FFT_4_Point.vhd"
-vhdl work "FFT_4_Point_testbench.vhd"
