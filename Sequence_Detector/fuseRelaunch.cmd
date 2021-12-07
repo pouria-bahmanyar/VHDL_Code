@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "G:/VHDL_CODE/example_session_1/Sequence_Detector/Sequence_detector_TestBench_isim_beh.exe" -prj "G:/VHDL_CODE/example_session_1/Sequence_Detector/Sequence_detector_TestBench_beh.prj" "work.Sequence_detector_TestBench" 

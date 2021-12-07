@@ -1,0 +1,14 @@
+# Output products list for <IP_Practice>
+IP_Practice.asy
+IP_Practice.gise
+IP_Practice.ngc
+IP_Practice.sym
+IP_Practice.vhd
+IP_Practice.vho
+IP_Practice.xco
+IP_Practice.xise
+IP_Practice\doc\c_addsub_v11_0_readme.txt
+IP_Practice\doc\c_addsub_v11_0_vinfo.html
+IP_Practice\doc\ds214_addsub.pdf
+IP_Practice_flist.txt
+IP_Practice_xmdf.tcl
