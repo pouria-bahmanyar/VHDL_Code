@@ -1,0 +1,13 @@
+# Output products list for <Bin_Offset_Calculator>
+Bin_Offset_Calculator.asy
+Bin_Offset_Calculator.gise
+Bin_Offset_Calculator.ngc
+Bin_Offset_Calculator.sym
+Bin_Offset_Calculator.vhd
+Bin_Offset_Calculator.vho
+Bin_Offset_Calculator.xco
+Bin_Offset_Calculator.xise
+Bin_Offset_Calculator_flist.txt
+Bin_Offset_Calculator_readme.txt
+Bin_Offset_Calculator_xmdf.tcl
+_xmsgs\pn_parser.xmsgs

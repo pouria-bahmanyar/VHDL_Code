@@ -1,0 +1,15 @@
+# Output products list for <FFT_SQRT>
+FFT_SQRT.asy
+FFT_SQRT.gise
+FFT_SQRT.ngc
+FFT_SQRT.sym
+FFT_SQRT.vhd
+FFT_SQRT.vho
+FFT_SQRT.xco
+FFT_SQRT.xise
+FFT_SQRT\doc\cordic_ds249.pdf
+FFT_SQRT\doc\cordic_v4_0_vinfo.html
+FFT_SQRT_flist.txt
+FFT_SQRT_readme.txt
+FFT_SQRT_xmdf.tcl
+_xmsgs\pn_parser.xmsgs

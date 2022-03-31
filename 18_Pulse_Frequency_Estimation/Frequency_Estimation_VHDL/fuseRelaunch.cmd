@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "D:/Projects/37/Digital IFM/IF_FFT/IF_IFF_Top_tb_isim_beh.exe" -prj "D:/Projects/37/Digital IFM/IF_FFT/IF_IFF_Top_tb_beh.prj" "work.IF_IFF_Top_tb" 

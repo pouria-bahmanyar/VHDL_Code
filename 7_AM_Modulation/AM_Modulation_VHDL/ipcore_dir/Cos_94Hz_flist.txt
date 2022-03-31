@@ -1,0 +1,15 @@
+# Output products list for <Cos_94Hz>
+Cos_94Hz.asy
+Cos_94Hz.gise
+Cos_94Hz.ngc
+Cos_94Hz.sym
+Cos_94Hz.vhd
+Cos_94Hz.vho
+Cos_94Hz.xco
+Cos_94Hz.xise
+Cos_94Hz\doc\dds_compiler_v4_0_vinfo.html
+Cos_94Hz\doc\dds_ds558.pdf
+Cos_94Hz_flist.txt
+Cos_94Hz_readme.txt
+Cos_94Hz_xmdf.tcl
+_xmsgs\pn_parser.xmsgs

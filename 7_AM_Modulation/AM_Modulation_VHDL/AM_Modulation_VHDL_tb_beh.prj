@@ -1,0 +1,4 @@
+vhdl work "ipcore_dir/Cos_94Hz.vhd"
+vhdl work "ipcore_dir/Sin_430KHz.vhd"
+vhdl work "Top_Module.vhd"
+vhdl work "AM_Modulation_VHDL_tb.vhd"

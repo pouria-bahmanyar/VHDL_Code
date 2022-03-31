@@ -1,0 +1,3 @@
+work	"../System_Generator1/counter_sysgen.vhd"
+work	"../System_Generator1/counter_sysgen_cw.vhd"
+work	"Counter_Top.vhd"

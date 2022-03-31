@@ -1,0 +1,2 @@
+C:/Xilinx/14.7/ISE_DS/ISE/sysgen/bin/nt64/saferun.exe -a D:/Examples/SysGen_Example/SysGen_Model/counter_sysgen_cw_import.log -- c:/xilinx/14.7/ise_ds/ise//bin/nt64/xtclsh.exe ProjectGeneration.tcl
+C:/Xilinx/14.7/ISE_DS/ISE/sysgen/bin/nt64/saferun.exe -a D:/Examples/SysGen_Example/SysGen_Model/counter_sysgen_cw_import.log -- c:/xilinx/14.7/ise_ds/ise//bin/nt64/xtclsh.exe ProjectGeneration.tcl

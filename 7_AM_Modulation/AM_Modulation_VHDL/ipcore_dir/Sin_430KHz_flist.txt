@@ -1,0 +1,15 @@
+# Output products list for <Sin_430KHz>
+Sin_430KHz.asy
+Sin_430KHz.gise
+Sin_430KHz.ngc
+Sin_430KHz.sym
+Sin_430KHz.vhd
+Sin_430KHz.vho
+Sin_430KHz.xco
+Sin_430KHz.xise
+Sin_430KHz\doc\dds_compiler_v4_0_vinfo.html
+Sin_430KHz\doc\dds_ds558.pdf
+Sin_430KHz_flist.txt
+Sin_430KHz_readme.txt
+Sin_430KHz_xmdf.tcl
+_xmsgs\pn_parser.xmsgs

@@ -1,0 +1,44 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Mon Nov 28 15:11:42 2016
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "Clock" LOCATE = SITE "P85" LEVEL 1;
+PIN Mmult_GND_4_o_Input_Signal_D2[13]_MuLt_3_OUT_pins<92> = BEL
+        "Mmult_GND_4_o_Input_Signal_D2[13]_MuLt_3_OUT" PINNAME CLK;
+PIN Mmult_GND_4_o_Input_Signal_Int[13]_MuLt_1_OUT_pins<92> = BEL
+        "Mmult_GND_4_o_Input_Signal_Int[13]_MuLt_1_OUT" PINNAME CLK;
+PIN Maddsub_GND_4_o_Input_Signal_D1[13]_MuLt_2_OUT_pins<92> = BEL
+        "Maddsub_GND_4_o_Input_Signal_D1[13]_MuLt_2_OUT" PINNAME CLK;
+PIN Maddsub_GND_4_o_Input_Signal_D3[13]_MuLt_4_OUT_pins<92> = BEL
+        "Maddsub_GND_4_o_Input_Signal_D3[13]_MuLt_4_OUT" PINNAME CLK;
+PIN Madd_Adder_Tree_0[22]_Adder_Tree_1[22]_add_7_OUT1_pins<92> = BEL
+        "Madd_Adder_Tree_0[22]_Adder_Tree_1[22]_add_7_OUT1" PINNAME CLK;
+TIMEGRP Clock = BEL "Input_Signal_Int_0" BEL "Input_Signal_Int_1" BEL
+        "Input_Signal_Int_2" BEL "Input_Signal_Int_3" BEL "Input_Signal_Int_4"
+        BEL "Input_Signal_Int_5" BEL "Input_Signal_Int_6" BEL
+        "Input_Signal_Int_7" BEL "Input_Signal_Int_8" BEL "Input_Signal_Int_9"
+        BEL "Input_Signal_Int_10" BEL "Input_Signal_Int_11" BEL
+        "Input_Signal_Int_12" BEL "Input_Signal_Int_13" BEL
+        "Input_Signal_D1_0" BEL "Input_Signal_D1_1" BEL "Input_Signal_D1_2"
+        BEL "Input_Signal_D1_3" BEL "Input_Signal_D1_4" BEL
+        "Input_Signal_D1_5" BEL "Input_Signal_D1_6" BEL "Input_Signal_D1_7"
+        BEL "Input_Signal_D1_8" BEL "Input_Signal_D1_9" BEL
+        "Input_Signal_D1_10" BEL "Input_Signal_D1_11" BEL "Input_Signal_D1_12"
+        BEL "Input_Signal_D1_13" BEL "Output_Signal_Int_0" BEL
+        "Output_Signal_Int_1" BEL "Output_Signal_Int_2" BEL
+        "Output_Signal_Int_3" BEL "Output_Signal_Int_4" BEL
+        "Output_Signal_Int_5" BEL "Output_Signal_Int_6" BEL
+        "Output_Signal_Int_7" BEL "Output_Signal_Int_8" BEL
+        "Output_Signal_Int_9" BEL "Output_Signal_Int_10" BEL
+        "Output_Signal_Int_11" BEL "Output_Signal_Int_12" BEL
+        "Output_Signal_Int_13" PIN
+        "Mmult_GND_4_o_Input_Signal_D2[13]_MuLt_3_OUT_pins<92>" PIN
+        "Mmult_GND_4_o_Input_Signal_Int[13]_MuLt_1_OUT_pins<92>" PIN
+        "Maddsub_GND_4_o_Input_Signal_D1[13]_MuLt_2_OUT_pins<92>" PIN
+        "Maddsub_GND_4_o_Input_Signal_D3[13]_MuLt_4_OUT_pins<92>" PIN
+        "Madd_Adder_Tree_0[22]_Adder_Tree_1[22]_add_7_OUT1_pins<92>" BEL
+        "Clock_BUFGP/BUFG";
+TS_Clock = PERIOD TIMEGRP "Clock" 200 MHz HIGH 50%;
+SCHEMATIC END;
+

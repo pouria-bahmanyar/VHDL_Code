@@ -1,0 +1,17 @@
+# Output products list for <ICON_T>
+ICON_T.asy
+ICON_T.constraints\ICON_T.ucf
+ICON_T.constraints\ICON_T.xdc
+ICON_T.gise
+ICON_T.ngc
+ICON_T.sym
+ICON_T.ucf
+ICON_T.vhd
+ICON_T.vho
+ICON_T.xco
+ICON_T.xdc
+ICON_T.xise
+ICON_T_flist.txt
+ICON_T_readme.txt
+ICON_T_xmdf.tcl
+_xmsgs\pn_parser.xmsgs

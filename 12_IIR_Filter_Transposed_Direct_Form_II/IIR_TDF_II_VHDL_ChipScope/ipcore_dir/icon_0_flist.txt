@@ -1,0 +1,17 @@
+# Output products list for <icon_0>
+_xmsgs\pn_parser.xmsgs
+icon_0.asy
+icon_0.constraints\icon_0.ucf
+icon_0.constraints\icon_0.xdc
+icon_0.gise
+icon_0.ngc
+icon_0.sym
+icon_0.ucf
+icon_0.vhd
+icon_0.vho
+icon_0.xco
+icon_0.xdc
+icon_0.xise
+icon_0_flist.txt
+icon_0_readme.txt
+icon_0_xmdf.tcl

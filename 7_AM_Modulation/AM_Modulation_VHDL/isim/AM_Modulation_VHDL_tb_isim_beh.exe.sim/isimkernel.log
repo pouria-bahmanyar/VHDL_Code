@@ -1,0 +1,28 @@
+Command line:
+   AM_Modulation_VHDL_tb_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  57907
+
+Thu Aug 09 23:15:30 2018
+
+
+ Elaboration Time: 0.25 sec
+
+ Current Memory Usage: 5343.85 Meg
+
+ Total Signals          : 442
+ Total Nets             : 7487
+ Total Signal Drivers   : 142
+ Total Blocks           : 148
+ Total Primitive Blocks : 84
+ Total Processes        : 130
+ Total Traceable Variables  : 669
+ Total Scalar Nets and Variables : 29116
+
+ Total Simulation Time: 0.5 sec
+
+ Current Memory Usage: 5186.56 Meg
+
+Thu Aug 09 23:17:48 2018
+

@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=D:\Projects\37\Digital IFM\IF_FFT\IF_FFT_Top.ncd
+OUTFILE=D:\Projects\37\Digital IFM\IF_FFT\IF_FFT_Top.bit
+FAMILY=Virtex6
+PART=xc6vlx130t-1ff1156
+WORKINGDIR=D:\Projects\37\Digital IFM\IF_FFT
+LICENSE=ISE
+USER_INFO=_

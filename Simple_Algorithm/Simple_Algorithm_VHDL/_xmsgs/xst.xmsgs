@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">Product_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Top_Module</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">Product_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Top_Module</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">Product_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Top_Module</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">Product_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Top_Module</arg>&gt;.
+</msg>
+
+<msg type="info" file="Xst" num="2385" delta="new" >HDL ADVISOR - You can improve the performance of the multiplier <arg fmt="%s" index="1">Mmult_GND_4_o_DDS_Sin_2MHz[11]_MuLt_1_OUT</arg> by adding <arg fmt="%d" index="2">1</arg> register level(s).
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">blk000000be</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Sin_2MHz_Inst</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;blk0000011e&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">blk000000be</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Sin_2MHz_Inst</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;blk0000011e&gt; </arg>
+</msg>
+
+</messages>
+

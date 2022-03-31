@@ -1,0 +1,11 @@
+xst -intstyle ise -ifn "D:/Examples/FIR_Filter_Direct_Form_Pipeline_1/FIR_Direct_Form_VHDL/FIR_DF_Top.xst" -ofn "D:/Examples/FIR_Filter_Direct_Form_Pipeline_1/FIR_Direct_Form_VHDL/FIR_DF_Top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc FIR_UCF.ucf -p xc6slx9-tqg144-2 FIR_DF_Top.ngc FIR_DF_Top.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o FIR_DF_Top_map.ncd FIR_DF_Top.ngd FIR_DF_Top.pcf 
+par -w -intstyle ise -ol high -mt off FIR_DF_Top_map.ncd FIR_DF_Top.ncd FIR_DF_Top.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml FIR_DF_Top.twx FIR_DF_Top.ncd -o FIR_DF_Top.twr FIR_DF_Top.pcf -ucf FIR_UCF.ucf 
+bitgen -intstyle ise -f FIR_DF_Top.ut FIR_DF_Top.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc FIR_UCF.ucf -p xc6slx9-tqg144-2 FIR_DF_Top.ngc FIR_DF_Top.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o FIR_DF_Top_map.ncd FIR_DF_Top.ngd FIR_DF_Top.pcf 
+par -w -intstyle ise -ol high -mt off FIR_DF_Top_map.ncd FIR_DF_Top.ncd FIR_DF_Top.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml FIR_DF_Top.twx FIR_DF_Top.ncd -o FIR_DF_Top.twr FIR_DF_Top.pcf -ucf FIR_UCF.ucf 
+bitgen -intstyle ise -f FIR_DF_Top.ut FIR_DF_Top.ncd 

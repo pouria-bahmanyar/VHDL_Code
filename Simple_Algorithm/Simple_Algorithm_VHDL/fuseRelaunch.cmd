@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "D:/Examples/Simple_Algorithm/Simple_Algorithm_VHDL/Simple_Algorithm_VHDL_tb_isim_beh.exe" -prj "D:/Examples/Simple_Algorithm/Simple_Algorithm_VHDL/Simple_Algorithm_VHDL_tb_beh.prj" "work.Simple_Algorithm_VHDL_tb" 

@@ -1,0 +1,28 @@
+Command line:
+   FFT_4_point_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  13377
+
+Sat Dec 25 14:02:52 2021
+
+
+ Elaboration Time: 0.125 sec
+
+ Current Memory Usage: 4715.23 Meg
+
+ Total Signals          : 73
+ Total Nets             : 657
+ Total Signal Drivers   : 32
+ Total Blocks           : 7
+ Total Primitive Blocks : 6
+ Total Processes        : 17
+ Total Traceable Variables  : 13
+ Total Scalar Nets and Variables : 1140
+
+ Total Simulation Time: 0.1875 sec
+
+ Current Memory Usage: 4715.23 Meg
+
+Sat Dec 25 14:03:14 2021
+

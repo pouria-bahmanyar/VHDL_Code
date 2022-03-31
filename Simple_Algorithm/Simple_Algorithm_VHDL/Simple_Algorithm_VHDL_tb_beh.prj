@@ -1,0 +1,3 @@
+vhdl work "ipcore_dir/Sin_2MHz.vhd"
+vhdl work "Top_Module.vhd"
+vhdl work "Simple_Algorithm_VHDL_tb.vhd"

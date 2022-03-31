@@ -1,0 +1,18 @@
+ISim log file
+Running: D:\Examples\AM_Modulation\AM_Modulation_VHDL\AM_Modulation_VHDL_tb_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb D:/Examples/AM_Modulation/AM_Modulation_VHDL/AM_Modulation_VHDL_tb_isim_beh.wdb 
+ISim P.20131013 (signature 0x7708f090)
+This is a Full version of ISim.
+Time resolution is 1 ps
+# onerror resume
+# wave add /
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+at 25 ns(1), Instance /am_modulation_vhdl_tb/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 35 ns(1), Instance /am_modulation_vhdl_tb/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 45 ns(1), Instance /am_modulation_vhdl_tb/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 55 ns(1), Instance /am_modulation_vhdl_tb/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 65 ns(1), Instance /am_modulation_vhdl_tb/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 75 ns(1), Instance /am_modulation_vhdl_tb/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 85 ns(1), Instance /am_modulation_vhdl_tb/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# run 30 us

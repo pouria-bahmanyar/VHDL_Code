@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "D:/Examples/33_IIR_Filter_Transposed_Direct_Form_II_Series/IIR_TDF_II_VHDL/IIR_TDF_II_tb_isim_beh.exe" -prj "D:/Examples/33_IIR_Filter_Transposed_Direct_Form_II_Series/IIR_TDF_II_VHDL/IIR_TDF_II_tb_beh.prj" "work.IIR_TDF_II_tb" 

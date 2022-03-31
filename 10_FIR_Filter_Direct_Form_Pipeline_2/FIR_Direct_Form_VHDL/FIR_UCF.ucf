@@ -1,0 +1,4 @@
+NET	"Clock"		LOC = "p85";
+
+NET "Clock" TNM_NET = Clock;
+TIMESPEC TS_Clock = PERIOD "Clock" 300 MHz HIGH 50%;

@@ -1,0 +1,15 @@
+# Output products list for <Input_FFT_1>
+Input_FFT_1.asy
+Input_FFT_1.gise
+Input_FFT_1.ngc
+Input_FFT_1.sym
+Input_FFT_1.vhd
+Input_FFT_1.vho
+Input_FFT_1.xco
+Input_FFT_1.xise
+Input_FFT_1\doc\xfft_ds260.pdf
+Input_FFT_1\doc\xfft_v7_1_readme.txt
+Input_FFT_1\doc\xfft_v7_1_vinfo.html
+Input_FFT_1_flist.txt
+Input_FFT_1_xmdf.tcl
+_xmsgs\pn_parser.xmsgs

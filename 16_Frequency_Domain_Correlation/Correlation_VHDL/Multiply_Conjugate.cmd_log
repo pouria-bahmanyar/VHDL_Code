@@ -1,0 +1,1 @@
+vhdtdtfi -prj Correlation_VHDL -o D:/Examples/40_Frequency_Domain_Correlation/Correlation_VHDL/Multiply_Conjugate.vhi -module Multiply_Conjugate -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work Multiply_Conjugate.vhd 

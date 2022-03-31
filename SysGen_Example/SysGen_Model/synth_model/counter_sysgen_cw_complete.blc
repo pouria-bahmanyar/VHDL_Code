@@ -1,0 +1,35 @@
+Release 14.7 ngcbuild P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Command Line: c:\xilinx\14.7\ise_ds\ise\bin\nt64\unwrapped\ngcbuild.exe -p
+xc6slx9-2tqg144 counter_sysgen_cw counter_sysgen_cw_complete.ngc
+
+Reading NGO file
+"D:/Examples/SysGen_Example/SysGen_Model/synth_model/counter_sysgen_cw.ngc" ...
+Loading design module
+"D:\Examples\SysGen_Example\SysGen_Model\synth_model/xlpersistentdff.ngc"...
+Loading design module
+"D:\Examples\SysGen_Example\SysGen_Model\synth_model/cntr_11_0_73e33e5e2adb7d8c.
+ngc"...
+
+Applying constraints in "counter_sysgen_cw.ucf" to the design...
+Checking Constraint Associations...
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGCBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   0
+
+Total memory usage is 192228 kilobytes
+
+Writing NGC file "counter_sysgen_cw_complete.ngc" ...
+Total REAL time to NGCBUILD completion:  5 sec
+Total CPU time to NGCBUILD completion:   5 sec
+
+Writing NGCBUILD log file "counter_sysgen_cw_complete.blc"...

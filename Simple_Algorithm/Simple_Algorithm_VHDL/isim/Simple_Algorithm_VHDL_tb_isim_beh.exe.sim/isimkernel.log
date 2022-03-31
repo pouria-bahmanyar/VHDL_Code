@@ -1,0 +1,28 @@
+Command line:
+   Simple_Algorithm_VHDL_tb_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  62673
+
+Mon Dec 19 23:03:18 2016
+
+
+ Elaboration Time: 0.09375 sec
+
+ Current Memory Usage: 844.247 Meg
+
+ Total Signals          : 226
+ Total Nets             : 3907
+ Total Signal Drivers   : 77
+ Total Blocks           : 85
+ Total Primitive Blocks : 52
+ Total Processes        : 71
+ Total Traceable Variables  : 420
+ Total Scalar Nets and Variables : 59103
+
+ Total Simulation Time: 0.5625 sec
+
+ Current Memory Usage: 1167.21 Meg
+
+Mon Dec 19 23:03:59 2016
+

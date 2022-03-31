@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=D:\Examples\IIR_Filter_Transposed_Direct_Form_II\IIR_TDF_II_VHDL\IIR_TDF_II_Top.ncd
+OUTFILE=D:\Examples\IIR_Filter_Transposed_Direct_Form_II\IIR_TDF_II_VHDL\IIR_TDF_II_Top.bit
+FAMILY=Spartan6
+PART=xc6slx9-2tqg144
+WORKINGDIR=D:\Examples\IIR_Filter_Transposed_Direct_Form_II\IIR_TDF_II_VHDL
+LICENSE=WebPack
+USER_INFO=__0_0_0

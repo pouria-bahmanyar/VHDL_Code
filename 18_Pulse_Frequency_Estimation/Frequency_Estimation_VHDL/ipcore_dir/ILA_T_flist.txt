@@ -1,0 +1,19 @@
+# Output products list for <ILA_T>
+ILA_T.asy
+ILA_T.cdc
+ILA_T.constraints\ILA_T.ucf
+ILA_T.constraints\ILA_T.xdc
+ILA_T.gise
+ILA_T.ncf
+ILA_T.ngc
+ILA_T.sym
+ILA_T.ucf
+ILA_T.vhd
+ILA_T.vho
+ILA_T.xco
+ILA_T.xdc
+ILA_T.xise
+ILA_T_flist.txt
+ILA_T_readme.txt
+ILA_T_xmdf.tcl
+_xmsgs\pn_parser.xmsgs

@@ -1,0 +1,15 @@
+# Output products list for <Sin_2MHz>
+Sin_2MHz.asy
+Sin_2MHz.gise
+Sin_2MHz.ngc
+Sin_2MHz.sym
+Sin_2MHz.vhd
+Sin_2MHz.vho
+Sin_2MHz.xco
+Sin_2MHz.xise
+Sin_2MHz\doc\dds_compiler_v4_0_vinfo.html
+Sin_2MHz\doc\dds_ds558.pdf
+Sin_2MHz_flist.txt
+Sin_2MHz_readme.txt
+Sin_2MHz_xmdf.tcl
+_xmsgs\pn_parser.xmsgs

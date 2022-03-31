@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=D:\Examples\FIR_Filter_Direct_Form\FIR_Direct_Form_VHDL\FIR_DF_Top.ncd
+OUTFILE=D:\Examples\FIR_Filter_Direct_Form\FIR_Direct_Form_VHDL\FIR_DF_Top.bit
+FAMILY=Spartan6
+PART=xc6slx9-2tqg144
+WORKINGDIR=D:\Examples\FIR_Filter_Direct_Form\FIR_Direct_Form_VHDL
+LICENSE=WebPack
+USER_INFO=__0_0_0

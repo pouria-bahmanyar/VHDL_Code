@@ -1,0 +1,4 @@
+work	"Correlation_Top.vhd"
+work	"Multiply_Conjugate.vhd"
+work	"ipcore_dir/Input_FFT_1.vhd"
+work	"ipcore_dir/Output_IFFT.vhd"

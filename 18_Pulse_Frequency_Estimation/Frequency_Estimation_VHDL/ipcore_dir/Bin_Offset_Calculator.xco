@@ -1,0 +1,61 @@
+##############################################################
+#
+# Xilinx Core Generator version 14.6
+# Date: Mon Jul 11 00:54:03 2016
+#
+##############################################################
+#
+#  This file contains the customisation parameters for a
+#  Xilinx CORE Generator IP GUI. It is strongly recommended
+#  that you do not manually alter this file as it may cause
+#  unexpected and unsupported behavior.
+#
+##############################################################
+#
+#  Generated from component: xilinx.com:ip:div_gen:3.0
+#
+##############################################################
+#
+# BEGIN Project Options
+SET addpads = false
+SET asysymbol = true
+SET busformat = BusFormatAngleBracketNotRipped
+SET createndf = false
+SET designentry = VHDL
+SET device = xc6vcx130t
+SET devicefamily = virtex6
+SET flowvendor = Other
+SET formalverification = false
+SET foundationsym = false
+SET implementationfiletype = Ngc
+SET package = ff1156
+SET removerpms = false
+SET simulationfiles = Behavioral
+SET speedgrade = -1
+SET verilogsim = false
+SET vhdlsim = true
+# END Project Options
+# BEGIN Select
+SELECT Divider_Generator family Xilinx,_Inc. 3.0
+# END Select
+# BEGIN Parameters
+CSET algorithm_type=High_Radix
+CSET ce=false
+CSET clocks_per_division=1
+CSET component_name=Bin_Offset_Calculator
+CSET divide_by_zero_detect=false
+CSET dividend_and_quotient_width=24
+CSET divisor_width=26
+CSET fractional_width=16
+CSET latency=26
+CSET latency_configuration=Automatic
+CSET operand_sign=Signed
+CSET remainder_type=Fractional
+CSET sclr=false
+CSET sclr_ce_priority=SCLR_overrides_CE
+# END Parameters
+# BEGIN Extra information
+MISC pkg_timestamp=2013-06-08T23:00:50Z
+# END Extra information
+GENERATE
+# CRC: 5e138142

@@ -1,0 +1,3 @@
+xst -intstyle ise -ifn "D:/Examples/Simple_Algorithm/Simple_Algorithm_VHDL/Top_Module.xst" -ofn "D:/Examples/Simple_Algorithm/Simple_Algorithm_VHDL/Top_Module.syr" 
+xst -intstyle ise -ifn "D:/Examples/Simple_Algorithm/Simple_Algorithm_VHDL/Top_Module.xst" -ofn "D:/Examples/Simple_Algorithm/Simple_Algorithm_VHDL/Top_Module.syr" 
+xst -intstyle ise -ifn "D:/Examples/Simple_Algorithm/Simple_Algorithm_VHDL/Top_Module.xst" -ofn "D:/Examples/Simple_Algorithm/Simple_Algorithm_VHDL/Top_Module.syr" 

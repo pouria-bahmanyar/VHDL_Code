@@ -1,0 +1,4 @@
+NET Clock      		  LOC = K24  | IOSTANDARD = LVCMOS25;
+
+NET "Clock" TNM_NET = Clock;
+TIMESPEC TS_Clock = PERIOD "Clock" 100 MHz HIGH 50%;

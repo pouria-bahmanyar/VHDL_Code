@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="D:/Projects/37/Digital IFM/IF_FFT/IF_IFF_Top_tb_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="bip_utils_pkg_v2_0" />
+            <top_module name="cordic_v4_0_pack" />
+            <top_module name="if_iff_top_tb" />
+            <top_module name="math_real" />
+            <top_module name="mult_gen_pkg_v11_0" />
+            <top_module name="numeric_std" />
+            <top_module name="std_logic_1164" />
+            <top_module name="std_logic_arith" />
+            <top_module name="std_logic_signed" />
+            <top_module name="std_logic_textio" />
+            <top_module name="std_logic_unsigned" />
+            <top_module name="textio" />
+            <top_module name="vcomponents" />
+            <top_module name="vital_primitives" />
+            <top_module name="vital_timing" />
+            <top_module name="vpkg" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="23" />
+   <wvobject fp_name="/if_iff_top_tb/clock" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clock</obj_property>
+      <obj_property name="ObjectShortName">clock</obj_property>
+   </wvobject>
+   <wvobject fp_name="/if_iff_top_tb/if_input" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">if_input[13:0]</obj_property>
+      <obj_property name="ObjectShortName">if_input[13:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/if_iff_top_tb/uut/signal_i_int" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">signal_i_int[13:0]</obj_property>
+      <obj_property name="ObjectShortName">signal_i_int[13:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/if_iff_top_tb/uut/signal_q_int" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">signal_q_int[13:0]</obj_property>
+      <obj_property name="ObjectShortName">signal_q_int[13:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/if_iff_top_tb/uut/signal_i_delayed" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">signal_i_delayed[13:0]</obj_property>
+      <obj_property name="ObjectShortName">signal_i_delayed[13:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/if_iff_top_tb/uut/signal_q_delayed" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">signal_q_delayed[13:0]</obj_property>
+      <obj_property name="ObjectShortName">signal_q_delayed[13:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/if_iff_top_tb/baseband_signal_out" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">baseband_signal_out[13:0]</obj_property>
+      <obj_property name="ObjectShortName">baseband_signal_out[13:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/if_iff_top_tb/input_noise_mean_out" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">input_noise_mean_out[13:0]</obj_property>
+      <obj_property name="ObjectShortName">input_noise_mean_out[13:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/if_iff_top_tb/fft_output_index_out" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">fft_output_index_out[6:0]</obj_property>
+      <obj_property name="ObjectShortName">fft_output_index_out[6:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/if_iff_top_tb/fft_amp_out" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">fft_amp_out[22:0]</obj_property>
+      <obj_property name="ObjectShortName">fft_amp_out[22:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/if_iff_top_tb/clock_period" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">clock_period</obj_property>
+      <obj_property name="ObjectShortName">clock_period</obj_property>
+   </wvobject>
+   <wvobject fp_name="/if_iff_top_tb/uut/fft_start" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">fft_start</obj_property>
+      <obj_property name="ObjectShortName">fft_start</obj_property>
+   </wvobject>
+   <wvobject fp_name="/if_iff_top_tb/uut/fft_data_valid" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">fft_data_valid</obj_property>
+      <obj_property name="ObjectShortName">fft_data_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/if_iff_top_tb/uut/fft_amp_ready" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">fft_amp_ready</obj_property>
+      <obj_property name="ObjectShortName">fft_amp_ready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/if_iff_top_tb/uut/fft_max_amp_a_buff" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">fft_max_amp_a_buff[22:0]</obj_property>
+      <obj_property name="ObjectShortName">fft_max_amp_a_buff[22:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/if_iff_top_tb/uut/fft_max_amp_b_buff" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">fft_max_amp_b_buff[22:0]</obj_property>
+      <obj_property name="ObjectShortName">fft_max_amp_b_buff[22:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/if_iff_top_tb/uut/fft_max_amp_c_buff" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">fft_max_amp_c_buff[22:0]</obj_property>
+      <obj_property name="ObjectShortName">fft_max_amp_c_buff[22:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/if_iff_top_tb/uut/fft_bin_offset_num" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">fft_bin_offset_num[23:0]</obj_property>
+      <obj_property name="ObjectShortName">fft_bin_offset_num[23:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/if_iff_top_tb/uut/fft_bin_offset_den" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">fft_bin_offset_den[24:0]</obj_property>
+      <obj_property name="ObjectShortName">fft_bin_offset_den[24:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/if_iff_top_tb/uut/bin_offset" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">bin_offset[23:0]</obj_property>
+      <obj_property name="ObjectShortName">bin_offset[23:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/if_iff_top_tb/uut/fft_max_index_buff" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">fft_max_index_buff[6:0]</obj_property>
+      <obj_property name="ObjectShortName">fft_max_index_buff[6:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/if_iff_top_tb/uut/bin_offset_new_data" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">bin_offset_new_data</obj_property>
+      <obj_property name="ObjectShortName">bin_offset_new_data</obj_property>
+   </wvobject>
+   <wvobject fp_name="/if_iff_top_tb/uut/bin_offset_new_ready" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">bin_offset_new_ready</obj_property>
+      <obj_property name="ObjectShortName">bin_offset_new_ready</obj_property>
+   </wvobject>
+</wave_config>

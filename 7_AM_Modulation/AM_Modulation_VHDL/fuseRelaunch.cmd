@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "D:/Examples/AM_Modulation/AM_Modulation_VHDL/AM_Modulation_VHDL_tb_isim_beh.exe" -prj "D:/Examples/AM_Modulation/AM_Modulation_VHDL/AM_Modulation_VHDL_tb_beh.prj" "work.AM_Modulation_VHDL_tb" 

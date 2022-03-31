@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "D:/Examples/SysGen_Example/Counter_SysGen/Counter_Top_tb_isim_beh.exe" -prj "D:/Examples/SysGen_Example/Counter_SysGen/Counter_Top_tb_beh.prj" "work.Counter_Top_tb" 

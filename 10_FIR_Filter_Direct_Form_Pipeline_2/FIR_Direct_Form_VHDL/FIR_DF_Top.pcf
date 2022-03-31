@@ -1,0 +1,70 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Mon Nov 28 15:39:12 2016
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "Clock" LOCATE = SITE "P85" LEVEL 1;
+PIN Mmult_GND_4_o_Input_Signal_Int[13]_MuLt_1_OUT_pins<92> = BEL
+        "Mmult_GND_4_o_Input_Signal_Int[13]_MuLt_1_OUT" PINNAME CLK;
+PIN Maddsub_Input_Signal_D11[13]_GND_4_o_MuLt_2_OUT_pins<92> = BEL
+        "Maddsub_Input_Signal_D11[13]_GND_4_o_MuLt_2_OUT" PINNAME CLK;
+PIN Maddsub_Input_Signal_D21[13]_GND_4_o_MuLt_4_OUT_pins<92> = BEL
+        "Maddsub_Input_Signal_D21[13]_GND_4_o_MuLt_4_OUT" PINNAME CLK;
+PIN Maddsub_Input_Signal_D31[13]_GND_4_o_MuLt_6_OUT_pins<92> = BEL
+        "Maddsub_Input_Signal_D31[13]_GND_4_o_MuLt_6_OUT" PINNAME CLK;
+TIMEGRP Clock = BEL "Input_Signal_Int_0" BEL "Input_Signal_Int_1" BEL
+        "Input_Signal_Int_2" BEL "Input_Signal_Int_3" BEL "Input_Signal_Int_4"
+        BEL "Input_Signal_Int_5" BEL "Input_Signal_Int_6" BEL
+        "Input_Signal_Int_7" BEL "Input_Signal_Int_8" BEL "Input_Signal_Int_9"
+        BEL "Input_Signal_Int_10" BEL "Input_Signal_Int_11" BEL
+        "Input_Signal_Int_12" BEL "Input_Signal_Int_13" PIN
+        "Mmult_GND_4_o_Input_Signal_Int[13]_MuLt_1_OUT_pins<92>" PIN
+        "Maddsub_Input_Signal_D11[13]_GND_4_o_MuLt_2_OUT_pins<92>" PIN
+        "Maddsub_Input_Signal_D21[13]_GND_4_o_MuLt_4_OUT_pins<92>" PIN
+        "Maddsub_Input_Signal_D31[13]_GND_4_o_MuLt_6_OUT_pins<92>" BEL
+        "Clock_BUFGP/BUFG" BEL "Mshreg_Input_Signal_D11_2" BEL
+        "Input_Signal_D11_2" BEL "Mshreg_Input_Signal_D11_0" BEL
+        "Input_Signal_D11_0" BEL "Mshreg_Input_Signal_D11_1" BEL
+        "Input_Signal_D11_1" BEL "Mshreg_Input_Signal_D11_5" BEL
+        "Input_Signal_D11_5" BEL "Mshreg_Input_Signal_D11_3" BEL
+        "Input_Signal_D11_3" BEL "Mshreg_Input_Signal_D11_4" BEL
+        "Input_Signal_D11_4" BEL "Mshreg_Input_Signal_D11_8" BEL
+        "Input_Signal_D11_8" BEL "Mshreg_Input_Signal_D11_6" BEL
+        "Input_Signal_D11_6" BEL "Mshreg_Input_Signal_D11_7" BEL
+        "Input_Signal_D11_7" BEL "Mshreg_Input_Signal_D11_9" BEL
+        "Input_Signal_D11_9" BEL "Mshreg_Input_Signal_D11_10" BEL
+        "Input_Signal_D11_10" BEL "Mshreg_Input_Signal_D11_13" BEL
+        "Input_Signal_D11_13" BEL "Mshreg_Input_Signal_D11_11" BEL
+        "Input_Signal_D11_11" BEL "Mshreg_Input_Signal_D11_12" BEL
+        "Input_Signal_D11_12" BEL "Mshreg_Output_Signal_Int_1" BEL
+        "Output_Signal_Int_1" BEL "Mshreg_Output_Signal_Int_0" BEL
+        "Output_Signal_Int_0" BEL "Mshreg_Output_Signal_Int_2" BEL
+        "Output_Signal_Int_2" BEL "Mshreg_Output_Signal_Int_3" BEL
+        "Output_Signal_Int_3" BEL "Mshreg_Output_Signal_Int_6" BEL
+        "Output_Signal_Int_6" BEL "Mshreg_Output_Signal_Int_4" BEL
+        "Output_Signal_Int_4" BEL "Mshreg_Output_Signal_Int_5" BEL
+        "Output_Signal_Int_5" BEL "Mshreg_Output_Signal_Int_7" BEL
+        "Output_Signal_Int_7" BEL "Mshreg_Output_Signal_Int_8" BEL
+        "Output_Signal_Int_8" BEL "Mshreg_Output_Signal_Int_11" BEL
+        "Output_Signal_Int_11" BEL "Mshreg_Output_Signal_Int_9" BEL
+        "Output_Signal_Int_9" BEL "Mshreg_Output_Signal_Int_10" BEL
+        "Output_Signal_Int_10" BEL "Mshreg_Output_Signal_Int_12" BEL
+        "Output_Signal_Int_12" BEL "Mshreg_Output_Signal_Int_13" BEL
+        "Output_Signal_Int_13" BEL "Mshreg_Input_Signal_D21_0" BEL
+        "Input_Signal_D21_0" BEL "Mshreg_Input_Signal_D21_1" BEL
+        "Input_Signal_D21_1" BEL "Mshreg_Input_Signal_D21_4" BEL
+        "Input_Signal_D21_4" BEL "Mshreg_Input_Signal_D21_2" BEL
+        "Input_Signal_D21_2" BEL "Mshreg_Input_Signal_D21_3" BEL
+        "Input_Signal_D21_3" BEL "Mshreg_Input_Signal_D21_5" BEL
+        "Input_Signal_D21_5" BEL "Mshreg_Input_Signal_D21_6" BEL
+        "Input_Signal_D21_6" BEL "Mshreg_Input_Signal_D21_9" BEL
+        "Input_Signal_D21_9" BEL "Mshreg_Input_Signal_D21_7" BEL
+        "Input_Signal_D21_7" BEL "Mshreg_Input_Signal_D21_8" BEL
+        "Input_Signal_D21_8" BEL "Mshreg_Input_Signal_D21_12" BEL
+        "Input_Signal_D21_12" BEL "Mshreg_Input_Signal_D21_10" BEL
+        "Input_Signal_D21_10" BEL "Mshreg_Input_Signal_D21_11" BEL
+        "Input_Signal_D21_11" BEL "Mshreg_Input_Signal_D21_13" BEL
+        "Input_Signal_D21_13";
+TS_Clock = PERIOD TIMEGRP "Clock" 300 MHz HIGH 50%;
+SCHEMATIC END;
+

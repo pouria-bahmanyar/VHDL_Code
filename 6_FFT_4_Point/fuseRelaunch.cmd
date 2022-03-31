@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "E:/VHDL_Code_github/FFT_4_Point/FFT_4_point_isim_beh.exe" -prj "E:/VHDL_Code_github/FFT_4_Point/FFT_4_point_beh.prj" "work.FFT_4_point" 

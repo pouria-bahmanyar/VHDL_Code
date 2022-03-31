@@ -1,0 +1,1 @@
+run -ifn xst_counter_sysgen.prj -ifmt mixed -ofn counter_sysgen_cw.ngc -ofmt NGC -p xc6slx9-2tqg144 -ent counter_sysgen_cw -keep_hierarchy NO -iobuf NO -bus_delimiter () -top counter_sysgen_cw -hierarchy_separator / -report_timing_constraint_problems warning -register_balancing no -iob Auto -uc counter_sysgen_cw.xcf -write_timing_constraints yes

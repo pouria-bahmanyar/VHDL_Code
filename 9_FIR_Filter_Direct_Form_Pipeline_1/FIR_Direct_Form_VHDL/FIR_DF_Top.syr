@@ -1,0 +1,422 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.17 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.18 secs
+ 
+--> Reading design: FIR_DF_Top.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "FIR_DF_Top.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "FIR_DF_Top"
+Output Format                      : NGC
+Target Device                      : xc6slx9-2-tqg144
+
+---- Source Options
+Top Module Name                    : FIR_DF_Top
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "D:\Examples\FIR_Filter_Direct_Form_Pipeline_1\FIR_Direct_Form_VHDL\FIR_DF_Top.vhd" into library work
+Parsing entity <FIR_DF_Top>.
+Parsing architecture <Behavioral> of entity <fir_df_top>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <FIR_DF_Top> (architecture <Behavioral>) from library <work>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <FIR_DF_Top>.
+    Related source file is "D:\Examples\FIR_Filter_Direct_Form_Pipeline_1\FIR_Direct_Form_VHDL\FIR_DF_Top.vhd".
+    Found 14-bit register for signal <Input_Signal_D1>.
+    Found 14-bit register for signal <Input_Signal_D2>.
+    Found 14-bit register for signal <Input_Signal_D3>.
+    Found 23-bit register for signal <Product_Pipe_0>.
+    Found 23-bit register for signal <Product_Pipe_1>.
+    Found 23-bit register for signal <Product_Pipe_2>.
+    Found 23-bit register for signal <Product_Pipe_3>.
+    Found 23-bit register for signal <Adder_Tree_0>.
+    Found 23-bit register for signal <Adder_Tree_1>.
+    Found 23-bit register for signal <FIR_Accumulator>.
+    Found 14-bit register for signal <Output_Signal_Int>.
+    Found 14-bit register for signal <Input_Signal_Int>.
+    Found 23-bit adder for signal <Product_Pipe_0[22]_Product_Pipe_1[22]_add_5_OUT> created at line 67.
+    Found 23-bit adder for signal <Product_Pipe_2[22]_Product_Pipe_3[22]_add_6_OUT> created at line 68.
+    Found 23-bit adder for signal <Adder_Tree_0[22]_Adder_Tree_1[22]_add_7_OUT> created at line 71.
+    Found 6x14-bit multiplier for signal <GND_4_o_Input_Signal_Int[13]_MuLt_1_OUT> created at line 61.
+    Found 8x14-bit multiplier for signal <GND_4_o_Input_Signal_D1[13]_MuLt_2_OUT> created at line 62.
+    Found 8x14-bit multiplier for signal <GND_4_o_Input_Signal_D2[13]_MuLt_3_OUT> created at line 63.
+    Found 6x14-bit multiplier for signal <GND_4_o_Input_Signal_D3[13]_MuLt_4_OUT> created at line 64.
+    Summary:
+	inferred   4 Multiplier(s).
+	inferred   3 Adder/Subtractor(s).
+	inferred 231 D-type flip-flop(s).
+Unit <FIR_DF_Top> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Multipliers                                          : 4
+ 14x6-bit multiplier                                   : 2
+ 14x8-bit multiplier                                   : 2
+# Adders/Subtractors                                   : 3
+ 23-bit adder                                          : 3
+# Registers                                            : 12
+ 14-bit register                                       : 5
+ 23-bit register                                       : 7
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:2677 - Node <FIR_Accumulator_0> of sequential type is unconnected in block <FIR_DF_Top>.
+WARNING:Xst:2677 - Node <FIR_Accumulator_1> of sequential type is unconnected in block <FIR_DF_Top>.
+WARNING:Xst:2677 - Node <FIR_Accumulator_2> of sequential type is unconnected in block <FIR_DF_Top>.
+WARNING:Xst:2677 - Node <FIR_Accumulator_3> of sequential type is unconnected in block <FIR_DF_Top>.
+WARNING:Xst:2677 - Node <FIR_Accumulator_4> of sequential type is unconnected in block <FIR_DF_Top>.
+WARNING:Xst:2677 - Node <FIR_Accumulator_5> of sequential type is unconnected in block <FIR_DF_Top>.
+WARNING:Xst:2677 - Node <FIR_Accumulator_6> of sequential type is unconnected in block <FIR_DF_Top>.
+WARNING:Xst:2677 - Node <FIR_Accumulator_7> of sequential type is unconnected in block <FIR_DF_Top>.
+WARNING:Xst:2677 - Node <FIR_Accumulator_22> of sequential type is unconnected in block <FIR_DF_Top>.
+
+Synthesizing (advanced) Unit <FIR_DF_Top>.
+	Multiplier <Mmult_GND_4_o_Input_Signal_D3[13]_MuLt_4_OUT> in block <FIR_DF_Top> and adder/subtractor <Madd_Product_Pipe_2[22]_Product_Pipe_3[22]_add_6_OUT> in block <FIR_DF_Top> are combined into a MAC<Maddsub_GND_4_o_Input_Signal_D3[13]_MuLt_4_OUT>.
+	The following registers are also absorbed by the MAC: <Product_Pipe_3> in block <FIR_DF_Top>, <Adder_Tree_1> in block <FIR_DF_Top>.
+	Multiplier <Mmult_GND_4_o_Input_Signal_D1[13]_MuLt_2_OUT> in block <FIR_DF_Top> and adder/subtractor <Madd_Product_Pipe_0[22]_Product_Pipe_1[22]_add_5_OUT> in block <FIR_DF_Top> are combined into a MAC<Maddsub_GND_4_o_Input_Signal_D1[13]_MuLt_2_OUT>.
+	The following registers are also absorbed by the MAC: <Product_Pipe_1> in block <FIR_DF_Top>, <Adder_Tree_0> in block <FIR_DF_Top>.
+	Found pipelined multiplier on signal <GND_4_o_Input_Signal_D2[13]_MuLt_3_OUT>:
+		- 1 pipeline level(s) found in a register connected to the multiplier macro output.
+		Pushing register(s) into the multiplier macro.
+	Found pipelined multiplier on signal <GND_4_o_Input_Signal_Int[13]_MuLt_1_OUT>:
+		- 1 pipeline level(s) found in a register connected to the multiplier macro output.
+		Pushing register(s) into the multiplier macro.
+INFO:Xst:2385 - HDL ADVISOR - You can improve the performance of the multiplier Mmult_GND_4_o_Input_Signal_D2[13]_MuLt_3_OUT by adding 1 register level(s).
+INFO:Xst:2385 - HDL ADVISOR - You can improve the performance of the multiplier Mmult_GND_4_o_Input_Signal_Int[13]_MuLt_1_OUT by adding 1 register level(s).
+Unit <FIR_DF_Top> synthesized (advanced).
+WARNING:Xst:2677 - Node <FIR_Accumulator_0> of sequential type is unconnected in block <FIR_DF_Top>.
+WARNING:Xst:2677 - Node <FIR_Accumulator_1> of sequential type is unconnected in block <FIR_DF_Top>.
+WARNING:Xst:2677 - Node <FIR_Accumulator_2> of sequential type is unconnected in block <FIR_DF_Top>.
+WARNING:Xst:2677 - Node <FIR_Accumulator_3> of sequential type is unconnected in block <FIR_DF_Top>.
+WARNING:Xst:2677 - Node <FIR_Accumulator_4> of sequential type is unconnected in block <FIR_DF_Top>.
+WARNING:Xst:2677 - Node <FIR_Accumulator_5> of sequential type is unconnected in block <FIR_DF_Top>.
+WARNING:Xst:2677 - Node <FIR_Accumulator_6> of sequential type is unconnected in block <FIR_DF_Top>.
+WARNING:Xst:2677 - Node <FIR_Accumulator_7> of sequential type is unconnected in block <FIR_DF_Top>.
+WARNING:Xst:2677 - Node <FIR_Accumulator_22> of sequential type is unconnected in block <FIR_DF_Top>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# MACs                                                 : 2
+ 14x6-to-23-bit MAC                                    : 1
+ 14x8-to-23-bit MAC                                    : 1
+# Multipliers                                          : 2
+ 14x6-bit registered multiplier                        : 1
+ 14x8-bit registered multiplier                        : 1
+# Adders/Subtractors                                   : 1
+ 23-bit adder                                          : 1
+# Registers                                            : 84
+ Flip-Flops                                            : 84
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <FIR_DF_Top> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block FIR_DF_Top, actual ratio is 1.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 42
+ Flip-Flops                                            : 42
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : FIR_DF_Top.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 2
+#      GND                         : 1
+#      VCC                         : 1
+# FlipFlops/Latches                : 42
+#      FD                          : 42
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 28
+#      IBUF                        : 14
+#      OBUF                        : 14
+# DSPs                             : 5
+#      DSP48A1                     : 5
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx9tqg144-2 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:              42  out of  11440     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:     42
+   Number with an unused Flip Flop:       0  out of     42     0%  
+   Number with an unused LUT:            42  out of     42   100%  
+   Number of fully used LUT-FF pairs:     0  out of     42     0%  
+   Number of unique control sets:         1
+
+IO Utilization: 
+ Number of IOs:                          29
+ Number of bonded IOBs:                  29  out of    102    28%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+ Number of DSP48A1s:                      5  out of     16    31%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+Clock                              | BUFGP                  | 47    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -2
+
+   Minimum period: 4.813ns (Maximum Frequency: 207.771MHz)
+   Minimum input arrival time before clock: 2.538ns
+   Maximum output required time after clock: 4.118ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'Clock'
+  Clock period: 4.813ns (frequency: 207.771MHz)
+  Total number of paths / destination ports: 231 / 231
+-------------------------------------------------------------------------
+Delay:               4.813ns (Levels of Logic = 0)
+  Source:            Maddsub_GND_4_o_Input_Signal_D3[13]_MuLt_4_OUT (DSP)
+  Destination:       Madd_Adder_Tree_0[22]_Adder_Tree_1[22]_add_7_OUT1 (DSP)
+  Source Clock:      Clock rising
+  Destination Clock: Clock rising
+
+  Data Path: Maddsub_GND_4_o_Input_Signal_D3[13]_MuLt_4_OUT to Madd_Adder_Tree_0[22]_Adder_Tree_1[22]_add_7_OUT1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     DSP48A1:CLK->P17      1   1.332   0.681  Maddsub_GND_4_o_Input_Signal_D3[13]_MuLt_4_OUT (Adder_Tree_1<17>)
+     DSP48A1:B17               2.800          Madd_Adder_Tree_0[22]_Adder_Tree_1[22]_add_7_OUT1
+    ----------------------------------------
+    Total                      4.813ns (4.132ns logic, 0.681ns route)
+                                       (85.9% logic, 14.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'Clock'
+  Total number of paths / destination ports: 50 / 50
+-------------------------------------------------------------------------
+Offset:              2.538ns (Levels of Logic = 1)
+  Source:            Input_Signal<13> (PAD)
+  Destination:       Mmult_GND_4_o_Input_Signal_Int[13]_MuLt_1_OUT (DSP)
+  Destination Clock: Clock rising
+
+  Data Path: Input_Signal<13> to Mmult_GND_4_o_Input_Signal_Int[13]_MuLt_1_OUT
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            11   1.328   1.038  Input_Signal_13_IBUF (Input_Signal_13_IBUF)
+     DSP48A1:B13               0.172          Maddsub_GND_4_o_Input_Signal_D1[13]_MuLt_2_OUT
+    ----------------------------------------
+    Total                      2.538ns (1.500ns logic, 1.038ns route)
+                                       (59.1% logic, 40.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'Clock'
+  Total number of paths / destination ports: 14 / 14
+-------------------------------------------------------------------------
+Offset:              4.118ns (Levels of Logic = 1)
+  Source:            Output_Signal_Int_13 (FF)
+  Destination:       Output_Signal<13> (PAD)
+  Source Clock:      Clock rising
+
+  Data Path: Output_Signal_Int_13 to Output_Signal<13>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               1   0.525   0.681  Output_Signal_Int_13 (Output_Signal_Int_13)
+     OBUF:I->O                 2.912          Output_Signal_13_OBUF (Output_Signal<13>)
+    ----------------------------------------
+    Total                      4.118ns (3.437ns logic, 0.681ns route)
+                                       (83.5% logic, 16.5% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock Clock
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+Clock          |    4.813|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 12.00 secs
+Total CPU time to Xst completion: 11.86 secs
+ 
+--> 
+
+Total memory usage is 282736 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   18 (   0 filtered)
+Number of infos    :    2 (   0 filtered)
+

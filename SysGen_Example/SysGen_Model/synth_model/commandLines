@@ -1,0 +1,2 @@
+C:/Xilinx/14.7/ISE_DS/ISE/sysgen/bin/nt64/saferun.exe -- c:/xilinx/14.7/ise_ds/ise//bin/nt64/xst.exe -ifn xst_counter_sysgen.scr -ofn counter_sysgen_cw.syr
+C:/Xilinx/14.7/ISE_DS/ISE/sysgen/bin/nt64/saferun.exe -- c:/xilinx/14.7/ise_ds/ise//bin/nt64/ngcbuild.exe -p xc6slx9-2tqg144 counter_sysgen_cw counter_sysgen_cw_complete.ngc

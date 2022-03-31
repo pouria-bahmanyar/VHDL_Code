@@ -1,0 +1,462 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.38 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.38 secs
+ 
+--> Reading design: FIR_DF_Top.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "FIR_DF_Top.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "FIR_DF_Top"
+Output Format                      : NGC
+Target Device                      : xc6slx9-2-tqg144
+
+---- Source Options
+Top Module Name                    : FIR_DF_Top
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "D:\Examples\FIR_Filter_Direct_Form_Pipeline_2\FIR_Direct_Form_VHDL\FIR_DF_Top.vhd" into library work
+Parsing entity <FIR_DF_Top>.
+Parsing architecture <Behavioral> of entity <fir_df_top>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <FIR_DF_Top> (architecture <Behavioral>) from library <work>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <FIR_DF_Top>.
+    Related source file is "D:\Examples\FIR_Filter_Direct_Form_Pipeline_2\FIR_Direct_Form_VHDL\FIR_DF_Top.vhd".
+    Found 14-bit register for signal <Input_Signal_D1>.
+    Found 14-bit register for signal <Input_Signal_D11>.
+    Found 14-bit register for signal <Input_Signal_D2>.
+    Found 14-bit register for signal <Input_Signal_D21>.
+    Found 14-bit register for signal <Input_Signal_D3>.
+    Found 14-bit register for signal <Input_Signal_D31>.
+    Found 23-bit register for signal <Product_Reg0>.
+    Found 23-bit register for signal <Product_Reg1>.
+    Found 23-bit register for signal <Product_Reg2>.
+    Found 23-bit register for signal <Product_Reg3>.
+    Found 14-bit register for signal <FIR_Accumulator<21:8>>.
+    Found 14-bit register for signal <Output_Signal_Int>.
+    Found 14-bit register for signal <Input_Signal_Int>.
+    Found 23-bit adder for signal <Input_Signal_D11[13]_Product_Reg0[22]_add_3_OUT> created at line 64.
+    Found 23-bit adder for signal <Input_Signal_D21[13]_Product_Reg1[22]_add_5_OUT> created at line 65.
+    Found 23-bit adder for signal <Input_Signal_D31[13]_Product_Reg2[22]_add_7_OUT> created at line 66.
+    Found 6x14-bit multiplier for signal <GND_4_o_Input_Signal_Int[13]_MuLt_1_OUT> created at line 63.
+    Found 14x8-bit multiplier for signal <Input_Signal_D11[13]_GND_4_o_MuLt_2_OUT> created at line 64.
+    Found 14x8-bit multiplier for signal <Input_Signal_D21[13]_GND_4_o_MuLt_4_OUT> created at line 65.
+    Found 14x6-bit multiplier for signal <Input_Signal_D31[13]_GND_4_o_MuLt_6_OUT> created at line 66.
+    Summary:
+	inferred   4 Multiplier(s).
+	inferred   3 Adder/Subtractor(s).
+	inferred 218 D-type flip-flop(s).
+Unit <FIR_DF_Top> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Multipliers                                          : 4
+ 14x6-bit multiplier                                   : 2
+ 14x8-bit multiplier                                   : 2
+# Adders/Subtractors                                   : 3
+ 23-bit adder                                          : 3
+# Registers                                            : 13
+ 14-bit register                                       : 9
+ 23-bit register                                       : 4
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:2677 - Node <Product_Reg3_0> of sequential type is unconnected in block <FIR_DF_Top>.
+WARNING:Xst:2677 - Node <Product_Reg3_1> of sequential type is unconnected in block <FIR_DF_Top>.
+WARNING:Xst:2677 - Node <Product_Reg3_2> of sequential type is unconnected in block <FIR_DF_Top>.
+WARNING:Xst:2677 - Node <Product_Reg3_3> of sequential type is unconnected in block <FIR_DF_Top>.
+WARNING:Xst:2677 - Node <Product_Reg3_4> of sequential type is unconnected in block <FIR_DF_Top>.
+WARNING:Xst:2677 - Node <Product_Reg3_5> of sequential type is unconnected in block <FIR_DF_Top>.
+WARNING:Xst:2677 - Node <Product_Reg3_6> of sequential type is unconnected in block <FIR_DF_Top>.
+WARNING:Xst:2677 - Node <Product_Reg3_7> of sequential type is unconnected in block <FIR_DF_Top>.
+WARNING:Xst:2677 - Node <Product_Reg3_22> of sequential type is unconnected in block <FIR_DF_Top>.
+
+Synthesizing (advanced) Unit <FIR_DF_Top>.
+	Multiplier <Mmult_Input_Signal_D31[13]_GND_4_o_MuLt_6_OUT> in block <FIR_DF_Top> and adder/subtractor <Madd_Input_Signal_D31[13]_Product_Reg2[22]_add_7_OUT> in block <FIR_DF_Top> are combined into a MAC<Maddsub_Input_Signal_D31[13]_GND_4_o_MuLt_6_OUT>.
+	The following registers are also absorbed by the MAC: <Product_Reg3> in block <FIR_DF_Top>.
+	Multiplier <Mmult_Input_Signal_D21[13]_GND_4_o_MuLt_4_OUT> in block <FIR_DF_Top> and adder/subtractor <Madd_Input_Signal_D21[13]_Product_Reg1[22]_add_5_OUT> in block <FIR_DF_Top> are combined into a MAC<Maddsub_Input_Signal_D21[13]_GND_4_o_MuLt_4_OUT>.
+	The following registers are also absorbed by the MAC: <Product_Reg2> in block <FIR_DF_Top>.
+	Multiplier <Mmult_Input_Signal_D11[13]_GND_4_o_MuLt_2_OUT> in block <FIR_DF_Top> and adder/subtractor <Madd_Input_Signal_D11[13]_Product_Reg0[22]_add_3_OUT> in block <FIR_DF_Top> are combined into a MAC<Maddsub_Input_Signal_D11[13]_GND_4_o_MuLt_2_OUT>.
+	The following registers are also absorbed by the MAC: <Product_Reg1> in block <FIR_DF_Top>.
+	Found pipelined multiplier on signal <GND_4_o_Input_Signal_Int[13]_MuLt_1_OUT>:
+		- 1 pipeline level(s) found in a register connected to the multiplier macro output.
+		Pushing register(s) into the multiplier macro.
+INFO:Xst:2385 - HDL ADVISOR - You can improve the performance of the multiplier Mmult_GND_4_o_Input_Signal_Int[13]_MuLt_1_OUT by adding 1 register level(s).
+Unit <FIR_DF_Top> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# MACs                                                 : 3
+ 14x6-to-23-bit MAC                                    : 1
+ 14x8-to-23-bit MAC                                    : 2
+# Multipliers                                          : 1
+ 14x6-bit registered multiplier                        : 1
+# Registers                                            : 126
+ Flip-Flops                                            : 126
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <FIR_DF_Top> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block FIR_DF_Top, actual ratio is 2.
+
+Final Macro Processing ...
+
+Processing Unit <FIR_DF_Top> :
+	Found 2-bit shift register for signal <Input_Signal_D11_0>.
+	Found 2-bit shift register for signal <Input_Signal_D11_1>.
+	Found 2-bit shift register for signal <Input_Signal_D11_2>.
+	Found 2-bit shift register for signal <Input_Signal_D11_3>.
+	Found 2-bit shift register for signal <Input_Signal_D11_4>.
+	Found 2-bit shift register for signal <Input_Signal_D11_5>.
+	Found 2-bit shift register for signal <Input_Signal_D11_6>.
+	Found 2-bit shift register for signal <Input_Signal_D11_7>.
+	Found 2-bit shift register for signal <Input_Signal_D11_8>.
+	Found 2-bit shift register for signal <Input_Signal_D11_9>.
+	Found 2-bit shift register for signal <Input_Signal_D11_10>.
+	Found 2-bit shift register for signal <Input_Signal_D11_11>.
+	Found 2-bit shift register for signal <Input_Signal_D11_12>.
+	Found 2-bit shift register for signal <Input_Signal_D11_13>.
+	Found 2-bit shift register for signal <Input_Signal_D21_0>.
+	Found 2-bit shift register for signal <Input_Signal_D21_1>.
+	Found 2-bit shift register for signal <Input_Signal_D21_2>.
+	Found 2-bit shift register for signal <Input_Signal_D21_3>.
+	Found 2-bit shift register for signal <Input_Signal_D21_4>.
+	Found 2-bit shift register for signal <Input_Signal_D21_5>.
+	Found 2-bit shift register for signal <Input_Signal_D21_6>.
+	Found 2-bit shift register for signal <Input_Signal_D21_7>.
+	Found 2-bit shift register for signal <Input_Signal_D21_8>.
+	Found 2-bit shift register for signal <Input_Signal_D21_9>.
+	Found 2-bit shift register for signal <Input_Signal_D21_10>.
+	Found 2-bit shift register for signal <Input_Signal_D21_11>.
+	Found 2-bit shift register for signal <Input_Signal_D21_12>.
+	Found 2-bit shift register for signal <Input_Signal_D21_13>.
+	Found 2-bit shift register for signal <Output_Signal_Int_0>.
+	Found 2-bit shift register for signal <Output_Signal_Int_1>.
+	Found 2-bit shift register for signal <Output_Signal_Int_2>.
+	Found 2-bit shift register for signal <Output_Signal_Int_3>.
+	Found 2-bit shift register for signal <Output_Signal_Int_4>.
+	Found 2-bit shift register for signal <Output_Signal_Int_5>.
+	Found 2-bit shift register for signal <Output_Signal_Int_6>.
+	Found 2-bit shift register for signal <Output_Signal_Int_7>.
+	Found 2-bit shift register for signal <Output_Signal_Int_8>.
+	Found 2-bit shift register for signal <Output_Signal_Int_9>.
+	Found 2-bit shift register for signal <Output_Signal_Int_10>.
+	Found 2-bit shift register for signal <Output_Signal_Int_11>.
+	Found 2-bit shift register for signal <Output_Signal_Int_12>.
+	Found 2-bit shift register for signal <Output_Signal_Int_13>.
+Unit <FIR_DF_Top> processed.
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 14
+ Flip-Flops                                            : 14
+# Shift Registers                                      : 42
+ 2-bit shift register                                  : 42
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : FIR_DF_Top.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 2
+#      GND                         : 1
+#      VCC                         : 1
+# FlipFlops/Latches                : 56
+#      FD                          : 14
+#      FDE                         : 42
+# Shift Registers                  : 42
+#      SRLC16E                     : 42
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 28
+#      IBUF                        : 14
+#      OBUF                        : 14
+# DSPs                             : 4
+#      DSP48A1                     : 4
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx9tqg144-2 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:              56  out of  11440     0%  
+ Number of Slice LUTs:                   42  out of   5720     0%  
+    Number used as Memory:               42  out of   1440     2%  
+       Number used as SRL:               42
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:     56
+   Number with an unused Flip Flop:       0  out of     56     0%  
+   Number with an unused LUT:            14  out of     56    25%  
+   Number of fully used LUT-FF pairs:    42  out of     56    75%  
+   Number of unique control sets:         2
+
+IO Utilization: 
+ Number of IOs:                          29
+ Number of bonded IOBs:                  29  out of    102    28%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+ Number of DSP48A1s:                      4  out of     16    25%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+Clock                              | BUFGP                  | 102   |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -2
+
+   Minimum period: 2.645ns (Maximum Frequency: 378.072MHz)
+   Minimum input arrival time before clock: 2.375ns
+   Maximum output required time after clock: 4.118ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'Clock'
+  Clock period: 2.645ns (frequency: 378.072MHz)
+  Total number of paths / destination ports: 282 / 282
+-------------------------------------------------------------------------
+Delay:               2.645ns (Levels of Logic = 0)
+  Source:            Mmult_GND_4_o_Input_Signal_Int[13]_MuLt_1_OUT (DSP)
+  Destination:       Maddsub_Input_Signal_D11[13]_GND_4_o_MuLt_2_OUT (DSP)
+  Source Clock:      Clock rising
+  Destination Clock: Clock rising
+
+  Data Path: Mmult_GND_4_o_Input_Signal_Int[13]_MuLt_1_OUT to Maddsub_Input_Signal_D11[13]_GND_4_o_MuLt_2_OUT
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     DSP48A1:CLK->PCOUT47    1   1.000   0.000  Mmult_GND_4_o_Input_Signal_Int[13]_MuLt_1_OUT (Mmult_GND_4_o_Input_Signal_Int[13]_MuLt_1_OUT_PCOUT_to_Maddsub_Input_Signal_D11[13]_GND_4_o_MuLt_2_OUT_PCIN_47)
+     DSP48A1:PCIN47            1.645          Maddsub_Input_Signal_D11[13]_GND_4_o_MuLt_2_OUT
+    ----------------------------------------
+    Total                      2.645ns (2.645ns logic, 0.000ns route)
+                                       (100.0% logic, 0.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'Clock'
+  Total number of paths / destination ports: 32 / 32
+-------------------------------------------------------------------------
+Offset:              2.375ns (Levels of Logic = 1)
+  Source:            Input_Signal<13> (PAD)
+  Destination:       Mmult_GND_4_o_Input_Signal_Int[13]_MuLt_1_OUT (DSP)
+  Destination Clock: Clock rising
+
+  Data Path: Input_Signal<13> to Mmult_GND_4_o_Input_Signal_Int[13]_MuLt_1_OUT
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             6   1.328   0.875  Input_Signal_13_IBUF (Input_Signal_13_IBUF)
+     DSP48A1:B13               0.172          Mmult_GND_4_o_Input_Signal_Int[13]_MuLt_1_OUT
+    ----------------------------------------
+    Total                      2.375ns (1.500ns logic, 0.875ns route)
+                                       (63.2% logic, 36.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'Clock'
+  Total number of paths / destination ports: 14 / 14
+-------------------------------------------------------------------------
+Offset:              4.118ns (Levels of Logic = 1)
+  Source:            Output_Signal_Int_13 (FF)
+  Destination:       Output_Signal<13> (PAD)
+  Source Clock:      Clock rising
+
+  Data Path: Output_Signal_Int_13 to Output_Signal<13>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              1   0.525   0.681  Output_Signal_Int_13 (Output_Signal_Int_13)
+     OBUF:I->O                 2.912          Output_Signal_13_OBUF (Output_Signal<13>)
+    ----------------------------------------
+    Total                      4.118ns (3.437ns logic, 0.681ns route)
+                                       (83.5% logic, 16.5% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock Clock
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+Clock          |    2.645|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 9.00 secs
+Total CPU time to Xst completion: 9.25 secs
+ 
+--> 
+
+Total memory usage is 282736 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    9 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+

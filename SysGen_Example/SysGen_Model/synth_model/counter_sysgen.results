@@ -1,0 +1,414 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Reading constraint file counter_sysgen_cw.xcf.
+XCF parsing done.
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "xst_counter_sysgen.prj"
+Input Format                       : mixed
+Synthesis Constraint File          : counter_sysgen_cw.xcf
+
+---- Target Parameters
+Output File Name                   : "counter_sysgen_cw.ngc"
+Output Format                      : NGC
+Target Device                      : xc6slx9-2tqg144
+
+---- Source Options
+Entity Name                        : counter_sysgen_cw
+Top Module Name                    : counter_sysgen_cw
+Automatic Register Balancing       : no
+
+---- Target Options
+Add IO Buffers                     : NO
+Pack IO Registers into IOBs        : Auto
+
+---- General Options
+Keep Hierarchy                     : NO
+Bus Delimiter                      : ()
+Hierarchy Separator                : /
+Write Timing Constraints           : yes
+
+---- Other Options
+report_timing_constraint_problems  : warning
+
+=========================================================================
+
+WARNING:Xst:29 - Optimization Effort not specified
+The following parameters have been added:
+Optimization Goal                  : SPEED
+
+=========================================================================
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "D:\Examples\SysGen_Example\SysGen_Model\synth_model\counter_sysgen.vhd" into library work
+Parsing entity <cntr_11_0_73e33e5e2adb7d8c>.
+Parsing architecture <cntr_11_0_73e33e5e2adb7d8c_a> of entity <cntr_11_0_73e33e5e2adb7d8c>.
+Parsing package <conv_pkg>.
+Parsing package body <conv_pkg>.
+Parsing entity <srl17e>.
+Parsing architecture <structural> of entity <srl17e>.
+Parsing entity <synth_reg>.
+Parsing architecture <structural> of entity <synth_reg>.
+Parsing entity <synth_reg_reg>.
+Parsing architecture <behav> of entity <synth_reg_reg>.
+Parsing entity <single_reg_w_init>.
+Parsing architecture <structural> of entity <single_reg_w_init>.
+Parsing entity <synth_reg_w_init>.
+Parsing architecture <structural> of entity <synth_reg_w_init>.
+Parsing entity <xlcounter_limit_counter_sysgen>.
+Parsing architecture <behavior> of entity <xlcounter_limit_counter_sysgen>.
+Parsing entity <counter_sysgen>.
+Parsing architecture <structural> of entity <counter_sysgen>.
+Parsing VHDL file "D:\Examples\SysGen_Example\SysGen_Model\synth_model\counter_sysgen_cw.vhd" into library work
+Parsing entity <xlclockdriver>.
+Parsing architecture <behavior> of entity <xlclockdriver>.
+Parsing entity <default_clock_driver_counter_sysgen>.
+Parsing architecture <structural> of entity <default_clock_driver_counter_sysgen>.
+Parsing entity <counter_sysgen_cw>.
+Parsing architecture <structural> of entity <counter_sysgen_cw>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <counter_sysgen_cw> (architecture <structural>) from library <work>.
+
+Elaborating entity <counter_sysgen> (architecture <structural>) from library <work>.
+
+Elaborating entity <xlcounter_limit_counter_sysgen> (architecture <behavior>) with generics from library <work>.
+
+Elaborating entity <cntr_11_0_73e33e5e2adb7d8c> (architecture <>) from library <work>.
+
+Elaborating entity <default_clock_driver_counter_sysgen> (architecture <structural>) from library <work>.
+
+Elaborating entity <xlclockdriver> (architecture <behavior>) with generics from library <work>.
+
+Elaborating entity <synth_reg_w_init> (architecture <structural>) with generics from library <work>.
+
+Elaborating entity <single_reg_w_init> (architecture <structural>) with generics from library <work>.
+WARNING:HDLCompiler:89 - "D:\Examples\SysGen_Example\SysGen_Model\synth_model\counter_sysgen.vhd" Line 1831: <fdre> remains a black-box since it has no binding entity.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <counter_sysgen_cw>.
+    Related source file is "D:\Examples\SysGen_Example\SysGen_Model\synth_model\counter_sysgen_cw.vhd".
+    Set property "syn_black_box = true" for instance <persistentdff_inst>.
+    Set property "syn_noprune = true" for instance <persistentdff_inst>.
+    Set property "optimize_primitives = false" for instance <persistentdff_inst>.
+    Set property "dont_touch = true" for instance <persistentdff_inst>.
+    Set property "MAX_FANOUT = REDUCE" for signal <ce_1_sg_x0>.
+    Set property "syn_keep = true" for signal <persistentdff_inst_q>.
+    Set property "KEEP = TRUE" for signal <persistentdff_inst_q>.
+WARNING:Xst:37 - Detected unknown constraint/property "preserve_signal". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:647 - Input <ce> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Summary:
+	no macro.
+Unit <counter_sysgen_cw> synthesized.
+
+Synthesizing Unit <counter_sysgen>.
+    Related source file is "D:\Examples\SysGen_Example\SysGen_Model\synth_model\counter_sysgen.vhd".
+    Summary:
+	no macro.
+Unit <counter_sysgen> synthesized.
+
+Synthesizing Unit <xlcounter_limit_counter_sysgen>.
+    Related source file is "D:\Examples\SysGen_Example\SysGen_Model\synth_model\counter_sysgen.vhd".
+        core_name0 = "cntr_11_0_73e33e5e2adb7d8c"
+        op_width = 8
+        op_arith = 1
+        cnt_63_48 = 0
+        cnt_47_32 = 0
+        cnt_31_16 = 0
+        cnt_15_0 = 120
+        count_limited = 1
+    Set property "syn_black_box = true" for instance <comp0.core_instance0>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+    Summary:
+	no macro.
+Unit <xlcounter_limit_counter_sysgen> synthesized.
+
+Synthesizing Unit <default_clock_driver_counter_sysgen>.
+    Related source file is "D:\Examples\SysGen_Example\SysGen_Model\synth_model\counter_sysgen_cw.vhd".
+    Set property "syn_noprune = true".
+    Set property "optimize_primitives = false".
+    Set property "dont_touch = true".
+INFO:Xst:3210 - "D:\Examples\SysGen_Example\SysGen_Model\synth_model\counter_sysgen_cw.vhd" line 378: Output port <clr> of the instance <xlclockdriver> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Examples\SysGen_Example\SysGen_Model\synth_model\counter_sysgen_cw.vhd" line 378: Output port <ce_logic> of the instance <xlclockdriver> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <default_clock_driver_counter_sysgen> synthesized.
+
+Synthesizing Unit <xlclockdriver>.
+    Related source file is "D:\Examples\SysGen_Example\SysGen_Model\synth_model\counter_sysgen_cw.vhd".
+        period = 1
+        log_2_period = 1
+        pipeline_regs = 5
+        use_bufg = 0
+    Set property "MAX_FANOUT = REDUCE" for signal <ce_vec>.
+    Set property "MAX_FANOUT = REDUCE" for signal <ce_vec_logic>.
+    Summary:
+	no macro.
+Unit <xlclockdriver> synthesized.
+
+Synthesizing Unit <synth_reg_w_init>.
+    Related source file is "D:\Examples\SysGen_Example\SysGen_Model\synth_model\counter_sysgen.vhd".
+        width = 1
+        init_index = 0
+        init_value = "0000"
+        latency = 1
+    Summary:
+	no macro.
+Unit <synth_reg_w_init> synthesized.
+
+Synthesizing Unit <single_reg_w_init>.
+    Related source file is "D:\Examples\SysGen_Example\SysGen_Model\synth_model\counter_sysgen.vhd".
+        width = 1
+        init_index = 0
+        init_value = "0000"
+    Set property "syn_black_box = true" for instance <fd_prim_array[0].bit_is_0.fdre_comp>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+    Summary:
+	no macro.
+Unit <single_reg_w_init> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Reading core <xlpersistentdff.ngc>.
+Reading core <cntr_11_0_73e33e5e2adb7d8c.ngc>.
+Reading Secure Unit <blk00000001>.
+Loading core <xlpersistentdff> for timing and area information for instance <persistentdff_inst>.
+Loading core <cntr_11_0_73e33e5e2adb7d8c> for timing and area information for instance <comp0.core_instance0>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 1
+ Flip-Flops                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <counter_sysgen_cw> ...
+WARNING:Xst:1710 - FF/Latch <default_clock_driver_counter_sysgen_x0/xlclockdriver_1/clr_reg/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp> (without init value) has a constant value of 0 in block <counter_sysgen_cw>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <default_clock_driver_counter_sysgen_x0/xlclockdriver_1/clr_reg/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp> (without init value) has a constant value of 0 in block <counter_sysgen_cw>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <default_clock_driver_counter_sysgen_x0/xlclockdriver_1/clr_reg/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp> (without init value) has a constant value of 0 in block <counter_sysgen_cw>. This FF/Latch will be trimmed during the optimization process.
+
+Mapping all equations...
+WARNING:Xst:1710 - FF/Latch <default_clock_driver_counter_sysgen_x0/xlclockdriver_1/clr_reg/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp> (without init value) has a constant value of 0 in block <counter_sysgen_cw>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <default_clock_driver_counter_sysgen_x0/xlclockdriver_1/clr_reg/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp> (without init value) has a constant value of 0 in block <counter_sysgen_cw>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <default_clock_driver_counter_sysgen_x0/xlclockdriver_1/clr_reg/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp> (without init value) has a constant value of 0 in block <counter_sysgen_cw>. This FF/Latch will be trimmed during the optimization process.
+Annotating constraints using XCF file 'counter_sysgen_cw.xcf'
+XCF parsing done.
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 0) on block counter_sysgen_cw, actual ratio is 0.
+WARNING:Xst:1710 - FF/Latch <default_clock_driver_counter_sysgen_x0/xlclockdriver_1/clr_reg/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp> (without init value) has a constant value of 0 in block <counter_sysgen_cw>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <default_clock_driver_counter_sysgen_x0/xlclockdriver_1/clr_reg/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp> (without init value) has a constant value of 0 in block <counter_sysgen_cw>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <default_clock_driver_counter_sysgen_x0/xlclockdriver_1/clr_reg/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp> (without init value) has a constant value of 0 in block <counter_sysgen_cw>. This FF/Latch will be trimmed during the optimization process.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 1
+ Flip-Flops                                            : 1
+
+=========================================================================
+WARNING:Xst:1710 - FF/Latch <default_clock_driver_counter_sysgen_x0/xlclockdriver_1/clr_reg/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp> (without init value) has a constant value of 0 in block <counter_sysgen_cw>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <default_clock_driver_counter_sysgen_x0/xlclockdriver_1/clr_reg/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp> (without init value) has a constant value of 0 in block <counter_sysgen_cw>. This FF/Latch will be trimmed during the optimization process.
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : counter_sysgen_cw.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 28
+#      GND                         : 1
+#      INV                         : 1
+#      LUT2                        : 8
+#      LUT3                        : 1
+#      LUT6                        : 1
+#      MUXCY                       : 7
+#      VCC                         : 1
+#      XORCY                       : 8
+# FlipFlops/Latches                : 10
+#      FD                          : 1
+#      FDRE                        : 9
+# Others                           : 1
+#      TIMESPEC                    : 1
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx9tqg144-2 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:              10  out of  11440     0%  
+ Number of Slice LUTs:                   11  out of   5720     0%  
+    Number used as Logic:                11  out of   5720     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:     21
+   Number with an unused Flip Flop:      11  out of     21    52%  
+   Number with an unused LUT:            10  out of     21    47%  
+   Number of fully used LUT-FF pairs:     0  out of     21     0%  
+   Number of unique control sets:         2
+
+IO Utilization: 
+ Number of IOs:                          11
+ Number of bonded IOBs:                   0  out of    102     0%  
+
+Specific Feature Utilization:
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)                                                                                                                     | Load  |
+-----------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------+-------+
+clk                                | NONE(default_clock_driver_counter_sysgen_x0/xlclockdriver_1/clr_reg/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp)| 10    |
+-----------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -2
+
+   Minimum period: 4.052ns (Maximum Frequency: 246.792MHz)
+   Minimum input arrival time before clock: 1.379ns
+   Maximum output required time after clock: 0.525ns
+   Maximum combinational path delay: No path found
+
+=========================================================================
+Timing constraint: TS_clk_29cd09c5 = PERIOD TIMEGRP "clk_29cd09c5" 10 nS HIGH 5 nS
+  Clock period: 4.052ns (frequency: 246.792MHz)
+  Total number of paths / destination ports: 129 / 17
+  Number of failed paths / ports: 0 (0.00%) / 0 (0.00%)
+-------------------------------------------------------------------------
+Slack:                  5.948ns
+  Source:               counter_sysgen_x0/counter/comp0.core_instance0/blk00000001/blk00000016 (FF)
+  Destination:          counter_sysgen_x0/counter/comp0.core_instance0/blk00000001/blk00000018 (FF)
+  Data Path Delay:      4.052ns (Levels of Logic = 4)
+  Source Clock:         clk rising at 0.000ns
+  Destination Clock:    clk rising at 10.000ns
+
+  Data Path: counter_sysgen_x0/counter/comp0.core_instance0/blk00000001/blk00000016 (FF) to counter_sysgen_x0/counter/comp0.core_instance0/blk00000001/blk00000018 (FF)
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     SEC:C->out            2   0.525   0.954  sec_inst (sec_net)
+     end scope: 'counter_sysgen_x0/counter/comp0.core_instance0/blk00000001:Q(2)'
+     end scope: 'counter_sysgen_x0/counter/comp0.core_instance0:q(2)'
+     LUT3:I0->O            1   0.235   0.682  counter_sysgen_x0/counter/op_thresh0(7)_SW0 (N2)
+     LUT6:I5->O            8   0.254   0.943  counter_sysgen_x0/counter/op_thresh0(7) (counter_sysgen_x0/counter/core_sinit)
+     begin scope: 'counter_sysgen_x0/counter/comp0.core_instance0:sinit'
+     begin scope: 'counter_sysgen_x0/counter/comp0.core_instance0/blk00000001:SINIT'
+     SEC:in                    0.459          sec_inst
+    ----------------------------------------
+    Total                      4.052ns (1.473ns logic, 2.579ns route)
+                                       (36.4% logic, 63.6% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    4.052|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 9.00 secs
+Total CPU time to Xst completion: 9.35 secs
+ 
+--> 
+
+Total memory usage is 282732 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   17 (   0 filtered)
+Number of infos    :    3 (   0 filtered)
+

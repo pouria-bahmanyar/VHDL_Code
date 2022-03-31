@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "D:/Examples/50_Moving_Average_Filter/Moving_Average_Filter_VHDL/MAF_Top_tb_isim_beh.exe" -prj "D:/Examples/50_Moving_Average_Filter/Moving_Average_Filter_VHDL/MAF_Top_tb_beh.prj" "work.MAF_Top_tb" 
